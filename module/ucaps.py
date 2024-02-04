@@ -21,19 +21,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-from mods.LSK import LSKblock
-from mods.ScConv import ScConv
-from mods.CrissCrossAttention import CrissCrossAttention
-from mods.CrissCrossAttention3D import CrissCrossAttention3D
-from mods.efficientViT import EfficientViT, EfficientViTBlock
-from mods.ViT_3D import *
-from mods.PolarizedSelfAttention import SequentialPolarizedSelfAttention
-from mods.strip_pooling import StripPooling
-from mods.efficientViT3D import EfficientViTBlock3D, PatchMerging3D, PatchExpand3D
-from mods.ASPP import ASPP
-from mods.ASPP3D import ASPP3D
-from mods.ResNest3D import SplitAttn3D
-
 torch.set_printoptions(profile="full")
 
 
