@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Training options
     train_parser = parser.add_argument_group("Training config")
     train_parser.add_argument("--log_dir", type=str, default=" ", help="")
-    val_parser.add_argument("--model_name", type=str, default="effiViTcaps", help="effiViTcaps /convcaps "
+    train_parser.add_argument("--model_name", type=str, default="effiViTcaps", help="effiViTcaps /convcaps "
                                                                     "/ ucaps / segcaps-2d / segcaps-3d / unet")
     train_parser.add_argument(
         "--dataset", type=str, default="iseg2017", help="iseg2017 / task02_heart / task04_hippocampus / luna16"

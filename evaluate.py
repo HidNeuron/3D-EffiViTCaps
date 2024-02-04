@@ -3,13 +3,16 @@ import argparse
 import numpy as np
 import torch
 from datamodule.iseg import ISeg2017DataModule
+from datamodule.heart import HeartDecathlonDataModule
+from datamodule.hippocampus import HippocampusDecathlonDataModule
+from datamodule.luna import LUNA16DataModule
 from module.effiViTcaps import EffiViTCaps3D
 from module.convcaps import ConvCaps3D
 from module.segcaps import SegCaps2D, SegCaps3D
 from module.ucaps import UCaps3D
 from module.unet import UNetModule
 from monai.data import NiftiSaver, decollate_batch
-from monai.metrics import ConfusionMatrixMetric, DiceMetric
+from monai.metrics import ConfusionMatrixMetric, DiceMetric, SurfaceDistanceMetric
 
 from monai.transforms import AsDiscrete, Compose, EnsureType, MapLabelValue
 from monai.utils import set_determinism
