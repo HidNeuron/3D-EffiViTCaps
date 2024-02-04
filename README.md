@@ -69,7 +69,7 @@ The evaluating example script is available [here](scripts/eval_3d_effiViTcaps.sh
 
 
 ## Trained models
-Our trained 3DConvCaps models on three datasets can be downloaded as follows: 
+Our trained 3D-EffiViTCaps models on three datasets can be downloaded as follows: 
 
 - [iSeg-2017](https://pan.baidu.com/disk/main?_at_=1707066763547#/index?category=all&path=%2F3D-EffiViTCaps-checkpoints%2Fiseg2017)
 - [Hippocampus](https://pan.baidu.com/disk/main?_at_=1707066763547#/index?category=all&path=%2F3D-EffiViTCaps-checkpoints%2Fhippocampus)
