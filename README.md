@@ -71,9 +71,9 @@ The evaluating example script is available [here](scripts/eval_3d_effiViTcaps.sh
 ## Trained models
 Our trained 3DConvCaps models on three datasets can be downloaded as follows: 
 
-- [iSeg-2017](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/EcXhqKrOfp9BiAhru2x0vwABSeew_qcQ-RSTA8NYmYO0xg?e=ZPI0Nj)
-- [Hippocampus](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/Eag8cZNDQ7FMietkIa4RodMB8dMXcaMS9eXzJfnrubbZTw?e=fWqP3h)
-- [Cardiac](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/EeqQ4YJ9LSZDhpJ8eDehfLMBBGTnY4ovlvkBAHODATe4Lg?e=6NZA8G)
+- [iSeg-2017](https://pan.baidu.com/disk/main?_at_=1707066763547#/index?category=all&path=%2F3D-EffiViTCaps-checkpoints%2Fiseg2017)
+- [Hippocampus](https://pan.baidu.com/disk/main?_at_=1707066763547#/index?category=all&path=%2F3D-EffiViTCaps-checkpoints%2Fhippocampus)
+- [Cardiac](https://pan.baidu.com/disk/main?_at_=1707066763547#/index?category=all&path=%2F3D-EffiViTCaps-checkpoints%2Fcardiac)
 
 ## Acknowledgement
 The implementation makes liberal use of code from [3DConvCaps](https://github.com/UARK-AICV/3DConvCaps) and [EfficientViT](https://github.com/microsoft/Cream/tree/main/EfficientViT).
