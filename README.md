@@ -9,7 +9,7 @@ Table of Contents
 # Introduction
 ![alt text](network imgs/3D-EffiViTCaps.jpg "3D-EffiViTCaps architecture")
 
-The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2205.09299). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D).
+The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2205.09299). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py).
 
 ## Usage
 
