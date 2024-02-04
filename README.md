@@ -9,7 +9,7 @@ Table of Contents
 # Introduction
 ![image](imgs/3D-EffiViTCaps.jpg)
 
-The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2205.09299). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py). A visualization example is shown below.
+The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py). A visualization example is shown below.
 
 ![image](imgs/visualization.png)
 
@@ -23,11 +23,11 @@ git clone https://github.com/HidNeuron/3D-EffiViTCaps.git
 
 - Install dependencies depends on your cuda version (CUDA 10 or CUDA 11)
 ```
-conda env create -f environment_cuda11.yml
+conda env create -f environment_cuda10.yml
 ```
 or
 ```
-conda env create -f environment_cuda10.yml
+conda env create -f environment_cuda11.yml
 ```
 
 ### Data preparation
@@ -80,11 +80,8 @@ The implementation makes liberal use of code from [3DConvCaps](https://github.co
 
 ## Citation
 ```
-@article{tran20223dconvcaps,
-  title={3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation},
-  author={Tran, Minh and Vo-Ho, Viet-Khoa and Le, Ngan TH},
-  journal={arXiv preprint arXiv:2205.09299},
-  year={2022}
+@article{
+
 }
 ```
 ## Contacts
