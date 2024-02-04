@@ -22,7 +22,7 @@ warnings.filterwarnings("ignore")
 
 
 # Call example
-# python train3D.py --gpus 1 --model_name UCaps --num_workers 4 --max_epochs 20000 --check_val_every_n_epoch 100 --log_dir=../logs --root_dir=/home/ubuntu/
+# python train.py --gpus 1 --model_name UCaps --num_workers 2 --max_epochs 20000 --check_val_every_n_epoch 1000 --log_dir=../logs --root_dir=/home/ubuntu/
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -149,7 +149,7 @@ if __name__ == "__main__":
             save_dir=args.log_dir, name=f"{args.model_name}_{args.dataset}_{args.fold}", log_graph=True)
     checkpoint_callback = ModelCheckpoint(
         filename="{epoch}-{val_dice:.4f}", monitor="val_dice", save_top_k=2, mode="max", save_last=True)
-    earlystopping_callback = EarlyStopping(monitor="val_dice", patience=25, mode="max")
+    earlystopping_callback = EarlyStopping(monitor="val_dice", patience=8, mode="max")
 
     trainer = Trainer.from_argparse_args(
         args,
@@ -158,7 +158,7 @@ if __name__ == "__main__":
         callbacks=[checkpoint_callback, earlystopping_callback],
         num_sanity_val_steps=0,
         accelerator='gpu',
-        max_epochs=50000,
+        max_epochs=20000,
         # terminate_on_nan=True,
         check_val_every_n_epoch=1000,
     )
