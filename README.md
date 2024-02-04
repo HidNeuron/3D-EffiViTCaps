@@ -9,14 +9,16 @@ Table of Contents
 # Introduction
 ![image](network_imgs/3D-EffiViTCaps.jpg)
 
-The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2205.09299). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py).
+The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2205.09299). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py). A visualization example is shown below.
+
+![image](network_imgs/3D-EffiViTCaps.jpg)
 
 ## Usage
 
 ### Installation
 - Clone the repository:
 ```
-git clone https://github.com/UARK-AICV-Lab/3DConvCaps
+git clone https://github.com/HidNeuron/3D-EffiViTCaps.git
 ```
 
 - Install dependencies depends on your cuda version (CUDA 10 or CUDA 11)
@@ -34,10 +36,10 @@ Our method is evaluated on three datasets:
 See this [repository](https://github.com/VinAIResearch/3D-UCaps) for more details on data preparation.
 
 ### Training
-The training example script is available [here](scripts/train_3dconvcaps.sh)
+The training example script is available [here](scripts/train_3d_effiViTcaps.sh)
 
 ### Validation
-The evaluating example script is available [here](scripts/eval_3dconvcaps.sh)
+The evaluating example script is available [here](scripts/eval_3d_effiViTcaps.sh)
 
 See this [repository](https://github.com/VinAIResearch/3D-UCaps) for more details on training and evaluating parameters.
 
@@ -48,9 +50,9 @@ Our trained 3DConvCaps models on three datasets can be downloaded as follows:
 - [Hippocampus](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/Eag8cZNDQ7FMietkIa4RodMB8dMXcaMS9eXzJfnrubbZTw?e=fWqP3h)
 - [Cardiac](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/EeqQ4YJ9LSZDhpJ8eDehfLMBBGTnY4ovlvkBAHODATe4Lg?e=6NZA8G)
 
-
 ## Acknowledgement
-The implementation is mainly based on [3DUCaps thorough implementation](https://github.com/VinAIResearch/3D-UCaps).
+The implementation makes liberal use of code from [3D-UCaps](https://github.com/VinAIResearch/3D-UCaps) and [EfficientViT](https://github.com/microsoft/Cream/tree/main/EfficientViT).
+
 ## Citation
 ```
 @article{tran20223dconvcaps,
@@ -61,4 +63,4 @@ The implementation is mainly based on [3DUCaps thorough implementation](https://
 }
 ```
 ## Contacts
-If you have any question, feel free to open an issue.
+We are honored to helping you if you have any questions. Please feel free to open an issue or contact us directly. Hope our code helps and look forward to your citations.
