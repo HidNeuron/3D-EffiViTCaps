@@ -24,7 +24,9 @@ git clone https://github.com/HidNeuron/3D-EffiViTCaps.git
 - Install dependencies depends on your cuda version (CUDA 10 or CUDA 11)
 ```
 conda env create -f environment_cuda11.yml
+'''
 or
+'''
 conda env create -f environment_cuda10.yml
 ```
 
@@ -33,15 +35,38 @@ Our method is evaluated on three datasets:
 * iSeg-2017 challenge (infant brain MRI segmentation): <https://iseg2017.web.unc.edu/download/>
 * Cardiac and Hippocampus dataset from Medical Segmentation Decathlon: <http://medicaldecathlon.com/>
 
-See this [repository](https://github.com/VinAIResearch/3D-UCaps) for more details on data preparation.
+The directory structure of the dataset is expected to be the following:
+'''
+path/to/iseg/
+  domainA/
+  domainA_val/
+
+path/to/cardiac/
+  imagesTr
+  labelsTr
+
+path/to/hippocampus/
+  imagesTr
+  labelsTr
+  '''
 
 ### Training
+For train.py and effiViTcaps.py, the args are set respectively as follows:
+1. train.py:
+   * basic arguments: `gpus`, `root_dir`, `log_dir`, `dataset`, `fold`, `cache_rate`, `cache_dir`, `model_name`, `train_patch_size`, `num_workers`, `batch_size`, `num_samples`.
+   * arguments for [Trainer](https://pytorch-lightning.readthedocs.io/en/latest/common/trainer.html#trainer-class-api) class from Pytorch Lightning: `benchmark`, `logger`, `callbacks`, `num_sanity_val_steps`, `accelerator`,  `max_epochs`, `terminate_on_nan`, `check_val_every_n_epoch`.
+
+2. effiViTcaps.py:
+   * network arguments: `in_channels`, `out_channels`, `val_frequency`, `val_patch_size`, `sw_batch_size`, `overlap`.
+
 The training example script is available [here](scripts/train_3d_effiViTcaps.sh)
 
 ### Validation
+For effiViTcaps.py, the args are set referring to [Training](#training). For evaluate.py, the args are set as follows:
+   * basic arguments: `root_dir`, `save_image`, `output_dir`,  `model_name`, `dataset`, `fold`, `checkpoint_path`.
+
 The evaluating example script is available [here](scripts/eval_3d_effiViTcaps.sh)
 
-See this [repository](https://github.com/VinAIResearch/3D-UCaps) for more details on training and evaluating parameters.
 
 ## Trained models
 Our trained 3DConvCaps models on three datasets can be downloaded as follows: 
@@ -51,7 +76,7 @@ Our trained 3DConvCaps models on three datasets can be downloaded as follows:
 - [Cardiac](https://uark-my.sharepoint.com/:u:/g/personal/minht_uark_edu/EeqQ4YJ9LSZDhpJ8eDehfLMBBGTnY4ovlvkBAHODATe4Lg?e=6NZA8G)
 
 ## Acknowledgement
-The implementation makes liberal use of code from [3D-UCaps](https://github.com/VinAIResearch/3D-UCaps) and [EfficientViT](https://github.com/microsoft/Cream/tree/main/EfficientViT).
+The implementation makes liberal use of code from [3DConvCaps](https://github.com/UARK-AICV/3DConvCaps) and [EfficientViT](https://github.com/microsoft/Cream/tree/main/EfficientViT).
 
 ## Citation
 ```
