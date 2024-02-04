@@ -24,9 +24,9 @@ git clone https://github.com/HidNeuron/3D-EffiViTCaps.git
 - Install dependencies depends on your cuda version (CUDA 10 or CUDA 11)
 ```
 conda env create -f environment_cuda11.yml
-'''
+```
 or
-'''
+```
 conda env create -f environment_cuda10.yml
 ```
 
@@ -36,7 +36,7 @@ Our method is evaluated on three datasets:
 * Cardiac and Hippocampus dataset from Medical Segmentation Decathlon: <http://medicaldecathlon.com/>
 
 The directory structure of the dataset is expected to be the following:
-'''
+```
 path/to/iseg/
   domainA/
   domainA_val/
@@ -48,7 +48,7 @@ path/to/cardiac/
 path/to/hippocampus/
   imagesTr
   labelsTr
-  '''
+```
 
 ### Training
 For train.py and effiViTcaps.py, the args are set respectively as follows:
