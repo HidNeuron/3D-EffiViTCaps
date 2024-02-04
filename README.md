@@ -61,7 +61,7 @@ For train.py and effiViTcaps.py, the args are set respectively as follows:
 
 The training example script is available [here](scripts/train_3d_effiViTcaps.sh)
 
-### Validation
+### Evaluation
 For effiViTcaps.py, the args are set referring to [Training](#training). For evaluate.py, the args are set as follows:
    * basic arguments: `root_dir`, `save_image`, `output_dir`,  `model_name`, `dataset`, `fold`, `checkpoint_path`.
 
