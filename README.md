@@ -1,4 +1,4 @@
-# 3D-EffiViTCaps: 3D Efffcient Vision Transformer with Capsule for Medical Image Segmentation
+# 3D-EffiViTCaps: 3D Effcient Vision Transformer with Capsule for Medical Image Segmentation
 Table of Contents
 * [Introduction](#introduction)
 * [Usage](#usage)
