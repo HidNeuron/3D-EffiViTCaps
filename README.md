@@ -85,4 +85,4 @@ The implementation makes liberal use of code from [3DConvCaps](https://github.co
 }
 ```
 ## Contacts
-We are honored to helping you if you have any questions. Please feel free to open an issue or contact us directly. Hope our code helps and look forward to your citations.
+We are honored to help you if you have any questions. Please feel free to open an issue or contact us directly. Hope our code helps and look forward to your citations.
