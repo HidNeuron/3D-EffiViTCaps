@@ -9,7 +9,7 @@ Table of Contents
 # Introduction
 ![image](imgs/3D-EffiViTCaps.jpg)
 
-The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py). A visualization example is shown below.
+The figure above illustrates our 3D-EffiViTCaps architecture. Details about it are described in our paper [here](https://arxiv.org/abs/2403.16350). The main implementation of this whole network can be found [here](module/effiViTcaps.py). In addition, the implementation of 3D Patch Merging block and 3D EfficientViT block can be find [here](main_block/efficientViT3D.py). A visualization example is shown below.
 
 ![image](imgs/visualization.png)
 
@@ -80,8 +80,13 @@ The implementation makes liberal use of code from [3DConvCaps](https://github.co
 
 ## Citation
 ```
-@article{
-
+@misc{gan20243deffivitcaps,
+      title={3D-EffiViTCaps: 3D Efficient Vision Transformer with Capsule for Medical Image Segmentation}, 
+      author={Dongwei Gan and Ming Chang and Juan Chen},
+      year={2024},
+      eprint={2403.16350},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
 }
 ```
 ## Contacts
