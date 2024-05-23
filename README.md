@@ -67,7 +67,16 @@ For effiViTcaps.py, the args are set referring to [Training](#training). For eva
 
 The evaluating example script is available [here](scripts/eval_3d_effiViTcaps.sh)
 
-
+### GUI
+Run the gui:
+```
+python main.py
+```
+The directory structure of the weights is expected to be the following:
+```
+path/to/weights/
+  model.ckpt
+```
 ## Trained models
 Our trained 3D-EffiViTCaps models on three datasets can be downloaded as follows: 
 
