@@ -1,0 +1,93 @@
+QPushButton {
+  font-family : "Microsoft YaHei";
+  font-size : 16px;
+  color:  #000000;
+  font-weight : bold;
+
+  text-align : center;
+
+  border-style : solid;
+  border-width : 1px;
+  border-color : rgb(21, 199, 199);
+  border-radius : 5px;
+
+  background-color : #ffffff;
+  background-repeat : no-repeat;
+  background-position : left center;
+}
+
+QPushButton:hover {
+  border-color: green;
+}
+
+.QLabel {
+  font-size : 20px;
+}
+
+QTitleLabel {
+  font-size : 32px;
+  font-family : 'Roman times';
+  font-weight : bold;
+}
+
+QLineEdit {
+	border: 1px solid #A0A0A0; 
+	border-radius: 5px;
+	background-color: #F2F2F2;
+	color: #3a3a3a;
+	font-family: 'Microsoft YaHei';
+	font-size: 16px;
+  height: 20px;
+  padding : 1px 2px 1px 2px; 
+}
+
+QLineEdit::selection {
+  background-color : #A0A0A0;
+  color : #F2F2F2;
+}
+
+QComboBox {
+  border: 2px solid #f3f3f3;
+  background-color: rgb(237, 242, 255);
+  border-radius: 8px;
+  padding: 1px 2px 1px 2px;
+  text-align : bottom;
+  min-width: 5em;
+  font-size: 16px;
+  font-weight: bold;
+  border-style : solid;
+  border-width : 1px;
+  border-color : gray;
+  padding-left: 10px;
+  height: 20px;
+  background-color: #F2F2F2;
+	color: #3a3a3a;
+}
+
+QComboBox::drop-down {
+  width: 0px;
+}
+
+QComboBox QAbstractItemView {
+  border: 2px solid #f3f3f3;
+  background-color : rgba(237, 242, 255, 1);
+  padding : 1px 2px 1px 2px; 
+  min-width: 5em;
+  outline : 0px;
+  font-size : 16px;
+}
+
+QComboBox QAbstractItemView::item {
+  height : 30px;
+  background-color: rgb(237, 242, 255);
+}
+
+QComboBox QAbstractItemView::item:hover {
+  color : #FFFFF0;
+  background-color : rgb(98, 0, 255);
+}
+
+QComboBox QAbstractItemView::item:selected {
+  color : #FFFFF0;
+  background-color : rgb(0, 85, 200);
+}
