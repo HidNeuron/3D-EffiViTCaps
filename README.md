@@ -89,13 +89,13 @@ The implementation makes liberal use of code from [3DConvCaps](https://github.co
 
 ## Citation
 ```
-@misc{gan20243deffivitcaps,
-      title={3D-EffiViTCaps: 3D Efficient Vision Transformer with Capsule for Medical Image Segmentation}, 
-      author={Dongwei Gan and Ming Chang and Juan Chen},
-      year={2024},
-      eprint={2403.16350},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@inproceedings{gan20243d,
+  title={{3D-EffiViTCaps}: {3D} efficient vision {Transformer} with capsule for medical image segmentation},
+  author={Gan, Dongwei and Chang, Ming and Chen, Juan},
+  booktitle={International Conference on Pattern Recognition},
+  pages={141--156},
+  year={2024},
+  organization={Springer}
 }
 ```
 ## Contacts
